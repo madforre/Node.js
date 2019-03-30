@@ -27,18 +27,48 @@ BDD vs TDD
 
     * TDD : Test-Driven Development
 
-Mocha.js
+    Mocha.js
 
-    모카는 테스트 코드를 실행해주는 테스트 러너이다.
+        모카는 테스트 코드를 실행해주는 테스트 러너이다.
 
-        descirbe(): 테스트 꾸러미(Test Suite)라고 하며 테스트 환경을 기술함
-        it(): 테스트 케이스(Test Case)라고 하며 단위 테스트를 정의함
+            descirbe(): 테스트 꾸러미(Test Suite)라고 하며 테스트 환경을 기술함
+            it(): 테스트 케이스(Test Case)라고 하며 단위 테스트를 정의함
 
-        유닛 테스트는 보통 세 단계로 나뉜다.
+            유닛 테스트는 보통 세 단계로 나뉜다.
 
-            가지런히 준비(arrange) -> 실행(act) -> 검증, 표명(assert)
+                가지런히 준비(arrange) -> 실행(act) -> 검증, 표명(assert)
 
-Should.js
+    Should.js
 
-    BDD style assertions for node.js
-    유닛 테스트를 도와주는 BDD assertions.
+        BDD style assertions for node.js
+        유닛 테스트를 도와주는 BDD assertions.
+
+노드 기본 모듈 목록
+
+    자주 사용하는 것만 짚어 보자
+
+        Console: 콘솔 로깅
+        Crypto: 암호화
+        Events: 이벤트 관리
+        File System: 파일 관리
+        Http: 네트웍 기능
+        OS: 운영체제 정보
+        Path: 경로 관리
+        Stream: 스트림 관리
+
+    http 기본 모듈
+
+        네트워크 기술을 구현한 Node.js의 기본 모듈이다.
+        네트워크 기능을 제공한다.
+
+        http.createServer(): 서버 인스턴스를 만들어 반환
+        http.server: 서버 클래스
+        server.listen(): 서버를 클라이언트 요청 대기 상태(listen)로 만듬
+
+        * curl hostname:port -v 명령어
+
+            curl을 이용하여 서버에 요청, 응답 정보를 확인할 수 있다.
+            -v 옵션을 추가하면 curl 요청을 보낼 때 http 헤더까지 볼 수 있다.
+
+            > 문자로 시작하면 요청 정보이고 
+            < 문자로 시작하면 응답 정보이다.

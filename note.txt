@@ -31,6 +31,13 @@ Mocha.js
 
     모카는 테스트 코드를 실행해주는 테스트 러너이다.
 
+        descirbe(): 테스트 꾸러미(Test Suite)라고 하며 테스트 환경을 기술함
+        it(): 테스트 케이스(Test Case)라고 하며 단위 테스트를 정의함
+
+        유닛 테스트는 보통 세 단계로 나뉜다.
+
+            가지런히 준비(arrange) -> 실행(act) -> 검증, 표명(assert)
+
 Should.js
 
     BDD style assertions for node.js

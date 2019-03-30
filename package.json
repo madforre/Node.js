@@ -1,0 +1,17 @@
+{
+  "name": "Node.js",
+  "version": "1.0.0",
+  "description": "practice",
+  "main": "index.js",
+  "repository": "https://github.com/madforre/Node.js.git",
+  "author": "Madforre <madforre@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha $(find ./ -name \"*.spec.js\")"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.0.2",
+    "should": "^13.2.3"
+  }
+}
